@@ -64,31 +64,12 @@ I'm an **AI Engineer** who builds practical, production-focused AI — from data
 - **Center for Student Welfare facilitator** (2024 – 2026) — workshops on communication, time and stress management.
 - **Volunteer** at ECPC, ACPC and ICPC regional competitions (2023 – 2026).
 
-<details>
-<summary><b>Certifications</b> (15)</summary>
+### My contributions
 
-- Generative AI Engineering with Large Language Models Specialization — IBM
-- Google AI Professional Certificate — Google
-- Programming Generative AI Specialization — Pearson
-- Generative AI with Large Language Models — DeepLearning.AI & AWS
-- Retrieval Augmented Generation (RAG) — DeepLearning.AI
-- LangChain and LangGraph Specialization — Packt
-- Building AI Agents: Fundamentals to Advanced — Packt
-- Natural Language Processing with Sequence Models — DeepLearning.AI
-- Natural Language Processing with Classification and Vector Spaces — DeepLearning.AI
-- Fundamentals of Digital Image and Video Processing — Northwestern University
-- Databases and SQL for Data Science with Python — IBM
-- Machine Learning for All — University of London
-- Introduction to Artificial Intelligence — IBM
-- Practical Python for AI Coding 1 — KAIST
-- Programming for Everybody & Python Basics — University of Michigan
-
-</details>
-
-### My contributions, as a game of Pac-Man
-
+<p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Eyad-Elnakib1/Eyad-Elnakib1/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Eyad-Elnakib1/Eyad-Elnakib1/output/pacman-contribution-graph.svg">
-  <img alt="Pac-Man eating my contribution graph" src="https://raw.githubusercontent.com/Eyad-Elnakib1/Eyad-Elnakib1/output/pacman-contribution-graph.svg">
+  <img alt="Pac-Man eating my contribution graph" src="https://raw.githubusercontent.com/Eyad-Elnakib1/Eyad-Elnakib1/output/pacman-contribution-graph.svg" width="90%">
 </picture>
+</p>
