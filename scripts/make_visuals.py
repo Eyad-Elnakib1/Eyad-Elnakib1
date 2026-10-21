@@ -140,7 +140,7 @@ def _font(name, size):
 
 def _sticker(kind, S):
     """One sticker in the portrait's style: dark panel, faint dot texture, lavender outline, monospace text."""
-    W, H = {"eat": (250, 270), "mode": (260, 200), "alone": (250, 280), "rule": (270, 210)}[kind]
+    W, H = {"eat": (260, 280), "mode": (270, 210), "ctrl": (250, 300), "rule": (280, 220)}[kind]
     W, H = W * S, H * S
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
@@ -158,7 +158,7 @@ def _sticker(kind, S):
             f = bold(20) if icon == "</>" else sym(28)
             tw = d.textlength(icon, font=f)
             d.text((45 * S - tw / 2, y + (12 if icon == "</>" else 4) * S), icon, font=f, fill=WHITE)
-            d.text((84 * S, y + 6 * S), word, font=bold(32), fill=WHITE if k == 2 else LAV)
+            d.text((84 * S, y + 4 * S), word, font=bold(38), fill=WHITE if k == 2 else LAV)
     elif kind == "mode":
         for k, word in enumerate(("ENGINEER", "MODE")):
             f = bold(40 if k else 34)
@@ -169,24 +169,53 @@ def _sticker(kind, S):
         d.text((x0 + 22 * S, y0 + 8 * S), "ON", font=bold(32), fill=WHITE)
         r = 21 * S
         d.ellipse([x1 - 6 * S - 2 * r, y0 + 6 * S, x1 - 6 * S, y0 + 6 * S + 2 * r], fill=WHITE)
-    elif kind == "alone":
-        for k, word in enumerate(("LEAVE ME ALONE!", "I'M CODING!")):
-            f = bold(22)
+    elif kind == "ctrl":
+        for k, word in enumerate(("EVERY", "THING", "IS UNDER")):
+            f = bold(46 if k < 2 else 34)
             tw = d.textlength(word, font=f)
-            d.text(((W - tw) / 2, (18 if k == 0 else 236) * S), word, font=f, fill=WHITE if k else LAV)
-        art = ["     \\ | /    ", "      _O_     ", "     / | \\ __ ", "  ___/_|_\\|==|", " |   |   ||__|", " |___|___|    ", "   |     |    "]
-        f = bold(17)
-        for k, line in enumerate(art):
-            tw = d.textlength(line, font=f)
-            d.text(((W - tw) / 2, (62 + k * 23) * S), line, font=f, fill=LAV if k else ACC)
+            d.text(((W - tw) / 2, (16 + k * 48) * S), word, font=f, fill=WHITE)
+        x0, y0, x1, y1 = 40 * S, 172 * S, W - 40 * S, 282 * S             # the Ctrl keycap
+        d.rounded_rectangle([x0, y0 + 10 * S, x1, y1], radius=16 * S, fill=(120, 100, 200, 255))
+        d.rounded_rectangle([x0, y0, x1, y1 - 14 * S], radius=16 * S, fill=(214, 204, 255, 255))
+        f = bold(44)
+        tw = d.textlength("Ctrl", font=f)
+        d.text(((W - tw) / 2, y0 + 22 * S), "Ctrl", font=f, fill=(24, 18, 46))
     elif kind == "rule":
         for k, col in enumerate(((255, 95, 87), (254, 188, 46), (40, 200, 64))):
             cx, cy = (26 + k * 24) * S, 26 * S
             d.ellipse([cx - 8 * S, cy - 8 * S, cx + 8 * S, cy + 8 * S], fill=col)
         lines = [("First rule of", WHITE), ("programming:", WHITE), ("If it works,", LAV), ("don't touch it.", (236, 120, 160))]
         for k, (t, col) in enumerate(lines):
-            d.text((24 * S, (54 + k * 36) * S), t, font=bold(25), fill=col)
+            d.text((22 * S, (52 + k * 40) * S), t, font=bold(29), fill=col)
     return img
+
+
+RAMP = " .,:;-=+*cox%#@"
+
+
+def _dotify(img, S, font_px=4):
+    """Redraw an RGBA picture as monospace characters: density and purple shade follow brightness (as the portrait)."""
+    import numpy as np
+    arr = np.asarray(img).astype(np.float32) / 255.0
+    alpha = arr[..., 3]
+    lum = (0.2126 * arr[..., 0] + 0.7152 * arr[..., 1] + 0.0722 * arr[..., 2]) * alpha
+    font = _font("consolab.ttf", font_px * S)
+    cw = font.getbbox("@")[2]
+    ch = int(font_px * S * 1.12)
+    out = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(out)
+    deep, mid, light = np.array([96, 62, 196]), np.array([176, 150, 255]), np.array([246, 242, 255])
+    for y in range(0, img.height - ch + 1, ch):
+        for x in range(0, img.width - cw + 1, cw):
+            a = alpha[y:y + ch, x:x + cw].mean()
+            if a < 0.5:
+                continue
+            v = float(np.percentile(lum[y:y + ch, x:x + cw], 85) / max(a, 1e-3))   # keep thin strokes bright
+            v = 0.16 + 0.84 * min(1.0, v * 1.45)               # dark panel keeps a dotted texture; text brightened
+            k = min(len(RAMP) - 1, int(v * (len(RAMP) - 1) + 0.5))
+            col = deep + (mid - deep) * min(1, v / 0.55) if v < 0.55 else mid + (light - mid) * ((v - 0.55) / 0.45)
+            d.text((x, y), RAMP[k], font=font, fill=tuple(int(c) for c in col) + (255,))
+    return out
 
 
 def window(portrait_path, out_path):
@@ -220,10 +249,10 @@ def window(portrait_path, out_path):
     inner_h = ph * S
     left_c = x0 + (side // 2 + 8) * S
     right_c = px + pw * S + (side // 2 + 4) * S
-    for kind, cx, fy, angle in (("eat", left_c, 0.27, 6), ("alone", left_c, 0.74, -5), ("mode", right_c, 0.25, -6), ("rule", right_c, 0.72, 5)):
-        st = _sticker(kind, S).rotate(angle, resample=Image.BICUBIC, expand=True)
+    for kind, cx, fy, angle in (("eat", left_c, 0.27, 6), ("ctrl", left_c, 0.74, -5), ("mode", right_c, 0.25, -6), ("rule", right_c, 0.72, 5)):
+        st = _dotify(_sticker(kind, S), S).rotate(angle, resample=Image.BICUBIC, expand=True)
         shadow = Image.new("RGBA", st.size, (0, 0, 0, 0))
-        shadow.putalpha(st.getchannel("A").point(lambda v: int(v * 0.45)))
+        shadow.putalpha(st.getchannel("A").point(lambda v: int(v * 0.0)))
         cy = inner_top + int(inner_h * fy)
         img.alpha_composite(shadow, (cx - st.width // 2 + 8 * S, cy - st.height // 2 + 10 * S))
         img.alpha_composite(st, (cx - st.width // 2, cy - st.height // 2))
