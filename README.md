@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/portrait-window.png" alt="Eyad Elnakib, drawn in characters, in a terminal window" width="100%">
+  <img src="assets/portrait-window.png" alt="Eyad Elnakib, drawn in characters, in a terminal window" width="90%">
 </p>
 <p align="center"><sub>Portrait drawn from my photo with <b>my own clothes-segmentation model</b> (<a href="https://github.com/Eyad-Elnakib1/Atelier">Atelier</a>) cutting out the background.</sub></p>
 
