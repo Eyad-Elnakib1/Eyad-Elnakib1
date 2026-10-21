@@ -136,19 +136,19 @@ def window(portrait_path, out_path):
     p = Image.open(portrait_path).convert("RGB")
     S = 2  # draw at 2x for sharp edges
     pw, ph = p.size
-    pad, bar, label_h = 26, 46, 34
+    pad, bar, label_h = 26, 70, 40
     W, H = pw + 2 * pad + 24, ph + bar + label_h + 2 * pad + 10
     img = Image.new("RGBA", (W * S, H * S), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     d.rounded_rectangle([0, 0, W * S - 1, H * S - 1], radius=18 * S, fill="#0d0b17", outline="#2b2547", width=2 * S)
     d.line([(0, bar * S), (W * S, bar * S)], fill="#2b2547", width=S)
     for k, col in enumerate(("#ff5f57", "#febc2e", "#28c840")):
-        cx, cy = (22 + k * 22) * S, (bar // 2) * S
-        d.ellipse([cx - 6 * S, cy - 6 * S, cx + 6 * S, cy + 6 * S], fill=col)
-    font = ImageFont.truetype(r"C:\Windows\Fonts\consola.ttf", 13 * S)
-    small = ImageFont.truetype(r"C:\Windows\Fonts\consolab.ttf", 12 * S)
+        cx, cy = (34 + k * 38) * S, (bar // 2) * S
+        d.ellipse([cx - 12 * S, cy - 12 * S, cx + 12 * S, cy + 12 * S], fill=col)
+    font = ImageFont.truetype(r"C:\Windows\Fonts\consola.ttf", 20 * S)
+    small = ImageFont.truetype(r"C:\Windows\Fonts\consolab.ttf", 18 * S)
     t = "eyad-elnakib1 — portrait.map"
-    d.text(((W - 18) * S - d.textlength(t, font=font), (bar // 2 - 8) * S), t, font=font, fill="#8f87b3")
+    d.text(((W - 18) * S - d.textlength(t, font=font), (bar // 2 - 12) * S), t, font=font, fill="#8f87b3")
     x0, y0 = pad * S, (bar + pad - 6) * S
     x1, y1 = (W - pad) * S, (H - pad) * S
     d.rounded_rectangle([x0, y0, x1, y1], radius=12 * S, outline="#3d3270", width=S)

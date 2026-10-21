@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/portrait-window.png" alt="Eyad Elnakib, drawn in characters, in a terminal window" width="440">
+  <img src="assets/portrait-window.png" alt="Eyad Elnakib, drawn in characters, in a terminal window" width="100%">
 </p>
 
 <h1 align="center">Eyad Elnakib</h1>
