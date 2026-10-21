@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/portrait-window.png" alt="Eyad Elnakib, drawn in characters, in a terminal window" width="90%">
+  <img src="assets/portrait-window.png" alt="Eyad Elnakib, drawn in characters, in a terminal window, with stickers: eat sleep code repeat, engineer mode on, leave me alone I am coding, first rule of programming" width="100%">
 </p>
 <p align="center"><sub>Portrait drawn from my photo with <b>my own clothes-segmentation model</b> (<a href="https://github.com/Eyad-Elnakib1/Atelier">Atelier</a>) cutting out the background.</sub></p>
 
