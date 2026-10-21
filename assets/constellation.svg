@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-label="A universe of work">
+<defs>
+  <radialGradient id="glow" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#7c5cff" stop-opacity="0.16"/><stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="orb" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#9d84ff"/><stop offset="60%" stop-color="#4b33a8"/><stop offset="100%" stop-color="#241a52"/></radialGradient>
+  <radialGradient id="orbSmall" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#7f6be0"/><stop offset="100%" stop-color="#1f1846"/></radialGradient>
+</defs>
+<rect x="1" y="1" width="898" height="538" rx="18" fill="#100e1d" stroke="#2b2547" stroke-width="1.5"/>
+<rect x="1" y="1" width="898" height="538" rx="18" fill="url(#glow)"/>
+<text x="36" y="44" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" letter-spacing="3" fill="#8f87b3">PROJECT CONSTELLATION</text>
+<text x="36" y="80" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="24" fill="#ece8ff">A universe of work</text>
+<line x1="36" y1="104" x2="864" y2="104" stroke="#2b2547" stroke-dasharray="6 8"/>
+<circle cx="80" cy="140" r="1.4" fill="#b79cff" opacity="0.7"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="3s" repeatCount="indefinite"/></circle><circle cx="840" cy="130" r="1.2" fill="#b79cff" opacity="0.6"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="4s" repeatCount="indefinite"/></circle><circle cx="590" cy="510" r="1.3" fill="#b79cff" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="5s" repeatCount="indefinite"/></circle><circle cx="330" cy="250" r="1" fill="#b79cff" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.5s" repeatCount="indefinite"/></circle><circle cx="800" cy="300" r="1" fill="#b79cff" opacity="0.6"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="4.5s" repeatCount="indefinite"/></circle><circle cx="110" cy="300" r="1.2" fill="#b79cff" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="5.5s" repeatCount="indefinite"/></circle><path d="M450,330 Q315.0,235.0 180,200" fill="none" stroke="#b79cff" stroke-opacity="0.35" stroke-dasharray="3 6"/><path d="M450,330 Q325.0,350.0 200,430" fill="none" stroke="#b79cff" stroke-opacity="0.35" stroke-dasharray="3 6"/><path d="M450,330 Q575.0,350.0 700,430" fill="none" stroke="#b79cff" stroke-opacity="0.35" stroke-dasharray="3 6"/><path d="M450,330 Q585.0,235.0 720,200" fill="none" stroke="#b79cff" stroke-opacity="0.35" stroke-dasharray="3 6"/><path d="M450,330 Q450.0,215.0 450,160" fill="none" stroke="#b79cff" stroke-opacity="0.35" stroke-dasharray="3 6"/><g>
+  <circle cx="450" cy="330" r="58" fill="none" stroke="#b79cff" stroke-opacity="0.45" stroke-dasharray="10 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 450 330" to="360 450 330" dur="40s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="330" r="46" fill="url(#orb)" stroke="#7c5cff" stroke-opacity="0.8">
+    <animate attributeName="r" values="46;48;46" dur="4s" begin="0.0s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="435" y="315" width="30" height="30" rx="7" fill="#0b0a14" fill-opacity="0.55" stroke="#b79cff" stroke-opacity="0.7"/>
+  <text x="450" y="334" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" font-weight="700" fill="#b79cff">NB</text>
+</g><g>
+  <circle cx="180" cy="200" r="40" fill="none" stroke="#b79cff" stroke-opacity="0.45" stroke-dasharray="10 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 180 200" to="360 180 200" dur="28s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="180" cy="200" r="28" fill="url(#orbSmall)" stroke="#7c5cff" stroke-opacity="0.8">
+    <animate attributeName="r" values="28;30;28" dur="4s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="165" y="185" width="30" height="30" rx="7" fill="#0b0a14" fill-opacity="0.55" stroke="#b79cff" stroke-opacity="0.7"/>
+  <text x="180" y="204" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" font-weight="700" fill="#b79cff">JS</text>
+</g><g>
+  <circle cx="200" cy="430" r="40" fill="none" stroke="#b79cff" stroke-opacity="0.45" stroke-dasharray="10 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 200 430" to="360 200 430" dur="28s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="430" r="28" fill="url(#orbSmall)" stroke="#7c5cff" stroke-opacity="0.8">
+    <animate attributeName="r" values="28;30;28" dur="4s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="185" y="415" width="30" height="30" rx="7" fill="#0b0a14" fill-opacity="0.55" stroke="#b79cff" stroke-opacity="0.7"/>
+  <text x="200" y="434" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" font-weight="700" fill="#b79cff">PY</text>
+</g><g>
+  <circle cx="700" cy="430" r="40" fill="none" stroke="#b79cff" stroke-opacity="0.45" stroke-dasharray="10 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 700 430" to="360 700 430" dur="28s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="430" r="28" fill="url(#orbSmall)" stroke="#7c5cff" stroke-opacity="0.8">
+    <animate attributeName="r" values="28;30;28" dur="4s" begin="1.7999999999999998s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="685" y="415" width="30" height="30" rx="7" fill="#0b0a14" fill-opacity="0.55" stroke="#b79cff" stroke-opacity="0.7"/>
+  <text x="700" y="434" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" font-weight="700" fill="#b79cff">JS</text>
+</g><g>
+  <circle cx="720" cy="200" r="40" fill="none" stroke="#b79cff" stroke-opacity="0.45" stroke-dasharray="10 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 720 200" to="360 720 200" dur="28s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="720" cy="200" r="28" fill="url(#orbSmall)" stroke="#7c5cff" stroke-opacity="0.8">
+    <animate attributeName="r" values="28;30;28" dur="4s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="705" y="185" width="30" height="30" rx="7" fill="#0b0a14" fill-opacity="0.55" stroke="#b79cff" stroke-opacity="0.7"/>
+  <text x="720" y="204" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" font-weight="700" fill="#b79cff">AI</text>
+</g><g>
+  <circle cx="450" cy="160" r="40" fill="none" stroke="#b79cff" stroke-opacity="0.45" stroke-dasharray="10 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 450 160" to="360 450 160" dur="28s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="160" r="28" fill="url(#orbSmall)" stroke="#7c5cff" stroke-opacity="0.8">
+    <animate attributeName="r" values="28;30;28" dur="4s" begin="3.0s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="435" y="145" width="30" height="30" rx="7" fill="#0b0a14" fill-opacity="0.55" stroke="#b79cff" stroke-opacity="0.7"/>
+  <text x="450" y="164" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" font-weight="700" fill="#b79cff">NB</text>
+</g><a href="https://github.com/Eyad-Elnakib1/Atelier"><text x="450" y="410" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="17" font-weight="700" fill="#ece8ff">Atelier</text></a><text x="450" y="428" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" fill="#8f87b3">Clothes segmentation &amp; restyling · Oct 2026</text><a href="https://github.com/Eyad-Elnakib1/Automated-Transit-Safety-Platform-with-RAG-Powered-Analytics"><text x="180" y="262" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="15" font-weight="700" fill="#ece8ff">Transit Safety Platform</text></a><text x="180" y="280" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" fill="#8f87b3">Driver monitoring + RAG analytics · Jul 2026</text><a href="https://github.com/Eyad-Elnakib1/Real-Eyes"><text x="200" y="492" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="15" font-weight="700" fill="#ece8ff">RealEyes</text></a><text x="200" y="510" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" fill="#8f87b3">Deepfake detection &amp; fact-checking · Jul 2026</text><a href="https://github.com/Eyad-Elnakib1/Fathia-AI-Development-of-an-Intelligent-Culinary-Assistant-and-Food-Community-"><text x="700" y="492" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="15" font-weight="700" fill="#ece8ff">Fridge Fusion</text></a><text x="700" y="510" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" fill="#8f87b3">AI chef &amp; food community · Aug 2026</text><a href="https://github.com/Eyad-Elnakib1/KodAI"><text x="720" y="262" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="15" font-weight="700" fill="#ece8ff">KodAI</text></a><text x="720" y="280" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" fill="#8f87b3">AI competitive-programming coach · Sep 2026</text><a href="https://github.com/Eyad-Elnakib1/Generative-models-VAE-DDPM"><text x="450" y="222" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="15" font-weight="700" fill="#ece8ff">VAE &amp; DDPM</text></a><text x="450" y="240" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace" font-size="11" fill="#8f87b3">Generative models from scratch · Oct 2026</text>
+
+</svg>

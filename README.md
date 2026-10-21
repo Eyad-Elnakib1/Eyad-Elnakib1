@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/portrait.png" alt="Eyad Elnakib, drawn in characters" width="380">
+  <img src="assets/portrait-window.png" alt="Eyad Elnakib, drawn in characters, in a terminal window" width="440">
 </p>
 
 <h1 align="center">Eyad Elnakib</h1>
@@ -9,9 +9,10 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/eyad-elnakib"><img src="https://img.shields.io/badge/LinkedIn-eyad--elnakib-7c5cff?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:eyad.elnakb@gmail.com"><img src="https://img.shields.io/badge/Email-eyad.elnakb%40gmail.com-7c5cff?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://atelier-two-omega.vercel.app"><img src="https://img.shields.io/badge/Live-Atelier-7c5cff?style=for-the-badge&logo=vercel&logoColor=white" alt="Atelier live website"></a>
+  <a href="https://www.linkedin.com/in/eyad-elnakib"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" width="44" alt="LinkedIn"></a>&nbsp;
+  <a href="mailto:eyad.elnakb@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" width="44" alt="Email"></a>&nbsp;
+  <a href="https://github.com/Eyad-Elnakib1"><img src="https://skillicons.dev/icons?i=github&theme=dark" width="44" alt="GitHub"></a>&nbsp;
+  <a href="https://atelier-two-omega.vercel.app"><img src="https://skillicons.dev/icons?i=vercel&theme=dark" width="44" alt="Atelier live website"></a>
 </p>
 
 ---
@@ -22,6 +23,12 @@
 - I build production-ready AI and integrate it into full-stack web apps — from data and model to deployment and the interface people use.
 - B.Sc. in **Artificial Intelligence Engineering**, Alamein International University, Egypt.
 - Coach and mentor: **ICPC** coach for 53 students, **IEEE** Machine Learning & Neural Networks coach for 100+ students.
+
+## Built, shipped, shared
+
+<p align="center"><img src="assets/constellation.svg" alt="Project constellation: Atelier at the centre, with Transit Safety Platform, RealEyes, Fridge Fusion, KodAI and VAE &amp; DDPM around it" width="100%"></p>
+
+<p align="center"><img src="assets/timeline.svg" alt="Project launch sequence from July to October 2026" width="100%"></p>
 
 ### Featured projects
 
