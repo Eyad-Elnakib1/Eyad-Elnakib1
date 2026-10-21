@@ -20,10 +20,13 @@
 
 ### About me
 
-- AI and Machine Learning Engineer focused on **computer vision, LLMs, RAG and generative AI**.
-- I build production-ready AI and integrate it into full-stack web apps — from data and model to deployment and the interface people use.
-- B.Sc. in **Artificial Intelligence Engineering**, Alamein International University, Egypt.
-- Coach and mentor: **ICPC** coach for 53 students, **IEEE** Machine Learning & Neural Networks coach for 100+ students.
+I'm an **AI Engineer** who builds practical, production-focused AI — from data and models to the applications people use. My work spans **machine learning, deep learning, computer vision, LLMs, RAG and generative AI**.
+
+- **What I do:** turn complex problems into reliable AI products — training and evaluating models, then deploying them behind real interfaces.
+- **Core tools:** Python, PyTorch, Hugging Face, LangChain, and modern full-stack and DevOps tooling.
+- **Education:** B.Sc. in Artificial Intelligence Engineering, Alamein International University, Egypt.
+- **Mentoring:** ICPC coach for 53 students; IEEE Machine Learning & Neural Networks coach for 100+ students.
+- **Open to:** AI Engineer, Machine Learning Engineer, AI/ML Software Engineer and Generative AI roles.
 
 ## Built, shipped, shared
 
