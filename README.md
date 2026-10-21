@@ -1,6 +1,7 @@
 <p align="center">
   <img src="assets/portrait-window.png" alt="Eyad Elnakib, drawn in characters, in a terminal window" width="100%">
 </p>
+<p align="center"><sub>Portrait drawn from my photo with my own clothes-segmentation model (<a href="https://github.com/Eyad-Elnakib1/Atelier">Atelier</a>) cutting out the background.</sub></p>
 
 <h1 align="center">Eyad Elnakib</h1>
 
@@ -88,5 +89,3 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Eyad-Elnakib1/Eyad-Elnakib1/output/pacman-contribution-graph.svg">
   <img alt="Pac-Man eating my contribution graph" src="https://raw.githubusercontent.com/Eyad-Elnakib1/Eyad-Elnakib1/output/pacman-contribution-graph.svg">
 </picture>
-
-<p align="center"><sub>Portrait drawn from my photo with my own clothes-segmentation model (<a href="https://github.com/Eyad-Elnakib1/Atelier">Atelier</a>) cutting out the background. Arabic (native) · English (professional).</sub></p>
